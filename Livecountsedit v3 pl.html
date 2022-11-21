@@ -1,0 +1,60 @@
+
+<!-- saved from url=(0054)file:///C:/Users/HP/Downloads/Livecountsedit%20v3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Livecountsedit v3</title>
+        <link href="./Livecountsedit v3 pl_files/odometer-theme-minimal.css" rel="stylesheet">
+        <link href="./Livecountsedit v3 pl_files/livecounts-net.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://randomperson3465.github.io/img/livecountsedit_logo.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Livecountsedit">
+        <meta property="og:url" content="https://randomperson3465.github.io/livecountsedit/v3">
+        <meta property="og:description" content="Livecountsedit v3 - Released March 2020">
+        <meta name="twitter:site" content="Livecountsedit">
+        <meta name="twitter:description" content="Livecountsedit v3 - Released March 2020">
+        <meta name="twitter:url" content="https://randomperson3465.github.io/livecountsedit/v3">
+    <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://pcajbjcmckcjacdpgmpadhmnpllndknb/content.css"></head>
+	<body id="body" style="background-color: rgb(208, 228, 254);"><noscript>This page requires JavaScript to work properly.</noscript>
+	
+		<input id="subscribeButton" type="submit" value="Subskrybuj!" style="opacity: 1.007; display: block;">
+		<a id="channelName" style="color: rgb(0, 0, 0); border: 3px none green;">Channel name</a>
+		<div class="odometer odometer-auto-theme" id="channelSubs" style="color: rgb(0, 0, 0);"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></div>
+		<div align="left" id="options">
+			<input type="text" id="channelSubmitName" name="channelSubmitName" placeholder="Nazwa kanału"><br>
+			<input type="number" id="countSubmit" name="countSubmit" placeholder="Subskrybcje kanału"><br>
+			<input type="number" id="subsPerMinute" name="subsPerMinute" placeholder="Min. subskrybcji"><br>
+			<input type="number" id="subsPerMinute2" name="subsPerMinute2" placeholder="Max. subskrybcji"><br>
+			<input type="number" id="subsAudit" name="subsAudit" placeholder="Naciśnij A aby wykonać spadek subskrybcji"><br>
+			<input id="submitButton" type="submit" value="Zaktualizuj" onclick="submit(); updateSubs()"><br>
+			<input type="checkbox" id="nonNegOnly" name="nonNegOnly" value="nonNegOnly">
+			<label id="nonNegLabel" for="nonNegOnly" style="color: rgb(0, 0, 0);">Wyłącz subskrybcje poniżej 0</label><br>
+			<input type="checkbox" id="night" name="night" value="night" onclick="toggleNightMode()">
+			<label id="nightLabel" for="night" style="color: rgb(0, 0, 0);">Tryb ciemności</label><br>
+			<input type="checkbox" id="unsub" name="unsub" value="unsub">
+			<label for="unsub" id="unsubLabel" style="color: rgb(0, 0, 0);">Czasami usuwaj subskrybcje (usuwanie zależy od szybkości subskybcji)</label><br>
+			<input type="checkbox" id="removeOld" name="removeOld" value="removeOld">
+			<label for="removeOld" id="removeOldLabel" style="color: rgb(0, 0, 0);">Tylko pokazuj 30 minut wykresu</label><br>
+			<select id="rateOption">
+				<option value="secs">Rate in subs/second</option>
+				<option value="mins">Rate in subs/minute</option>
+				<option value="hrs">Rate in subs/hour</option>
+				<option value="days">Rate in subs/day</option>
+			</select>
+		</div>
+		<div align="left" style="font-family: Arial">
+			<text id="info" style="color: rgb(0, 0, 0);">Ta strona nie jest związana z </text><a href="https://livecounts.net/" style="color: #08f">livecounts.net</a><br>
+			<text id="log" style="font-family: &quot;Arial Narrow&quot;; font-size: 14px; color: rgb(0, 0, 0);">P = zapauzuj, R = reset, H = ukrycie ustawień, C odświeżenie wykresu</text><br>
+		</div>
+		<div id="container" style="color: rgb(0, 0, 0);">
+			<div class="odometer odometer-auto-theme" id="channelSubs2"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span></div></div>
+			<div id="smallText">subskrybcje do 10</div>
+		</div>
+		<div style="margin-bottom: 50%;">
+			<canvas id="canvas" width="500" height="300">
+			</canvas>
+		</div>
+		<script src="./Livecountsedit v3 pl_files/v3.js.pobierz"></script>
+		<script src="./Livecountsedit v3 pl_files/v3_graph.js.pobierz"></script>
+		<script src="./Livecountsedit v3 pl_files/odometer.js.pobierz"></script>
+	
+
+</body></html>
